@@ -1,0 +1,15 @@
+mixin field(labelText, fieldName, fieldValue, fieldType = 'text', placeholder = null, id)
+  div
+    label(for=fieldName)= labelText
+    if fieldType === 'textarea'
+      textarea(id=fieldname name=fieldName rows='5')= fieldValue
+    else
+      input(type=fieldType name=fieldName value=fieldValue placeholder=placeholder id=id)
+
+mixin validationErrorSummary(errors)
+  if (errors)
+    div
+      p The following error(s) occurred:
+      ul
+        each error in errors
+          li= error
