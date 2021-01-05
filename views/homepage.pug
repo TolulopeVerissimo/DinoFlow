@@ -1,5 +1,7 @@
+link(rel='stylesheet' href='/stylesheets/stackoverflow.css')
+
 div.orange-overlay
-  
+
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light
   block head
@@ -7,11 +9,11 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
       function transformHammy(x) {
         x.classList.toggle("change");
       }
-  
-     
+
+
     //- Wanted the hamburger to delay this sections
     div.bar
-      div.bar1 
+      div.bar1
       div.bar2
       div.bar3
       nav-item.dropdown
@@ -27,7 +29,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
               a.dropdown-item(href='/Users') Users
 
               a.dropdown-item FIND A JOB
-              
+
               a.dropdown-item(href='/Jobs') Jobs
               a.dropdown-item(href='/Companies') Companies
 
@@ -61,35 +63,35 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
 
 
         </form>
-        
+
 
       ul.navbar-nav.navButton
         li.nav-item
-          button.nav-link(href='/login' class="buttonClass" id="log_in") Log in
+          button(href='/users/login' class="buttonClass" id="log_in") Log in
         li.nav-item
-          button.nav-link(href='/sign-Up' class="buttonClass" id="sign_up") Sign Up
+          button(href='/users/register' class="buttonClass" id="sign_up") Sign Up
 
-        
-          
- 
-div 
+
+
+
+div
   img.dinoPic#dinoPic(src="https://images-na.ssl-images-amazon.com/images/I/81QxCatsSyL._AC_SL1500_.jpg" alt="Dinosaurs")
   div.caption
       h1 We <3 people who code
         h3 We build products that empower developers
             br
             .
-             and connect them to solutions that enable 
+             and connect them to solutions that enable
             br
             .
              productivity, growth, and discovery.
-    
+
   div.twoButtons
       button(href='/developes' class="forDev" id="for_dev") For developers
-      button(href='/businesses' class="forBzn" id="for_bzn") For businesses 
-    
+      button(href='/businesses' class="forBzn" id="for_bzn") For businesses
 
-div 
+
+div
   p.bottom-page For developers, by developers
   p.community-message StackOverflow is an open community for anyone that codes. We help you
     br
@@ -97,5 +99,5 @@ div
       get answers to your toughest coding questions, share knowledge
     br
     .
-      with your coworkers in private, and find your next dream job. 
+      with your coworkers in private, and find your next dream job.
 div.three-boxes
