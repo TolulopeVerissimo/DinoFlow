@@ -19,15 +19,17 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
          .dropdown-menu(aria-labelledby='navbarHamburgerMenuLink')
             a.dropdown-item(href='#') Home
 
-            a.dropdown-item(href='#') Public
-            a.dropdown-item(href='#') Dino Flow
-            a.dropdown-item(href='#') Tags
-            a.dropdown-item(href='#') Users
-            a.dropdown-item(href='#') Home
+            a.dropdown-item(href='/Public') Public
 
-            a.dropdown-item(href='#') FIND A JOB
-            a.dropdown-item(href='#') Jobs
-            a.dropdown-item(href='#') Companies
+            a.dropdown-item(href='#') Dino Flow
+
+            a.dropdown-item(href='/Tags') Tags
+            a.dropdown-item(href='/Users') Users
+
+            a.dropdown-item FIND A JOB
+            
+            a.dropdown-item(href='/Jobs') Jobs
+            a.dropdown-item(href='/Companies') Companies
 
 
 
@@ -40,9 +42,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
         li.nav-item.active
           a.nav-link(href='#') About
         li.nav-item
-          a.nav-link(href='/food-courts') Products
+          a.nav-link(href='/Products') Products
         li.nav-item
-          a.nav-link(href='/parking') For Teams
+          a.nav-link(href='/ForTeams') For Teams
         <form id="search" role="search" action="/search" class="grid--cell fl-grow1 searchbar px12 js-searchbar " autocomplete="off">
               <div class="ps-relative">
                   <input name="q" type="text" placeholder="Search…" value="" autocomplete="off" maxlength="240" class="s-input s-input__search js-search-field " aria-label="Search" aria-controls="top-search" data-controller="s-popover" data-action="focus->s-popover#show" data-s-popover-placement="bottom-start">
@@ -58,18 +60,34 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
               <div class="js-ac-results overflow-y-auto hmx3 d-none"></div>
 
 
-              </form>
-          
-      ul.navbar-nav.float-right
+        </form>
+        
+
+      ul.navbar-nav.navButton
         li.nav-item
-          a.nav-link(href='/login') Login
+          button.nav-link(href='/login' class="buttonClass" id="log_in") Log in
         li.nav-item
-          a.nav-link(href='/login') Sign Up
+          button.nav-link(href='/sign-Up' class="buttonClass" id="sign_up") Sign Up
+
         
           
  
 div 
-  img.className#IdName(src="https://images-na.ssl-images-amazon.com/images/I/81QxCatsSyL._AC_SL1500_.jpg" alt="Image Title" width:100%)
+  img.dinoPic#dinoPic(src="https://images-na.ssl-images-amazon.com/images/I/81QxCatsSyL._AC_SL1500_.jpg" alt="Dinosaurs")
+  div.caption
+      h1 We <3 people who code
+        h3 We build products that empower developers
+            br
+            .
+             and connect them to solutions that enable 
+            br
+            .
+             productivity, growth, and discovery.
+    
+  div.twoButtons
+      button(href='/developes' class="forDev" id="for_dev") For developers
+      button(href='/businesses' class="forBzn" id="for_bzn") For businesses 
+    
 
 div 
   p.bottom-page For developers, by developers
@@ -81,5 +99,3 @@ div
     .
       with your coworkers in private, and find your next dream job. 
 div.three-boxes
-  
-  
