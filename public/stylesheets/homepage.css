@@ -1,3 +1,7 @@
+.body {
+    margin: 0;
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -76,6 +80,33 @@
 }
 
 .twoButtons {
-    top: 45%;
+    top: 90%;
     padding: 200px;
+}
+
+.navBar {
+    background-color: grey;
+    border-bottom: 1px solid black;
+
+    margin: 0;
+
+    height: 40px;
+}
+.navBar ul a {
+    margin: 0;
+    padding: 0;
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 17px;
+    top: 0;
+}
+.navBar a:hover {
+    background-color: #ddd;
+    color: orange;
+}
+.navBar a:active {
+    background-color: #ddd;
+    color: black;
 }
